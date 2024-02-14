@@ -28,7 +28,7 @@ pipeline{
                 nexusVersion: 'nexus2', 
                 protocol: 'http', 
                 repository: 'jackie', 
-                version: '0.0.5-SNAPSHOT'
+                version: '0.0.3-SNAPSHOT'
             }
         }
     }
