@@ -21,7 +21,7 @@ pipeline{
             steps{
                 nexusArtifactUploader artifacts: [[artifactId: 'med', 
                 classifier: '', 
-                file: 'target/bioMedical-0.0.5-SNAPSHOT.jar', 
+                file: 'target/bioMedical-0.0.3-SNAPSHOT.jar', 
                 type: 'jar']], credentialsId: '', 
                 groupId: 'ID1', 
                 nexusUrl: '198.58.119.40:8081/', 
