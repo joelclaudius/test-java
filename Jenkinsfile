@@ -31,17 +31,17 @@ pipeline{
         }
         stage("upload artifact"){
             steps{
-                nexusArtifactUploader artifacts: [[artifactId: ${artifact_id}, 
+                nexusArtifactUploader artifacts: [[artifactId: "${artifact_id}", 
                 classifier: '', 
-                file: ${file_target}, 
-                type: ${file_type}]], 
-                credentialsId: ${credentials_id}, 
-                groupId: ${group_id}, 
-                nexusUrl: ${nexus_url}, 
-                nexusVersion: ${version}, 
-                protocol: ${protocol}, 
-                repository: ${repo}, 
-                version: ${version}
+                file: "${file_target}", 
+                type: "${file_type}"]], 
+                credentialsId: "${credentials_id}", 
+                groupId: "${group_id}", 
+                nexusUrl: "${nexus_url}", 
+                nexusVersion: "${version}", 
+                protocol: "${protocol}", 
+                repository: "${repo}", 
+                version: "${version}"
             }
         }
     }
