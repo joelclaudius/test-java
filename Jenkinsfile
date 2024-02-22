@@ -11,6 +11,7 @@ pipeline{
         credentials_id ="NexusID"
         protocol = "http"
         artifact_id = "bioMedical"
+        nexus_version = "nexus3"
     }
     stages{
         stage("maven clean"){
@@ -38,7 +39,7 @@ pipeline{
                 credentialsId: "${credentials_id}", 
                 groupId: "${group_id}", 
                 nexusUrl: "${nexus_url}", 
-                nexusVersion: "${version}", 
+                nexusVersion: "${nexus_version}", 
                 protocol: "${protocol}", 
                 repository: "${repo}", 
                 version: "${version}"
